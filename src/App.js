@@ -1,16 +1,13 @@
 import React from 'react'
-
+import { Route,Routes } from 'react-router-dom'
+import Home from './component/Home'
 
 const App = () => {
   return (
     <>
-      <div className="container-fluid mt-3">
-         <div className="row">
-          <div className="col p-3 "></div>
-          <div className="col p-3 "><h1>Hello home page</h1></div>
-          <div className="col p-3 "></div>
-        </div>
-      </div>
+      <Routes>
+      <Route path='/' element={<Home />} />
+      </Routes>
     </>
   )
 }
