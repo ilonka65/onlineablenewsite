@@ -1,5 +1,18 @@
 import React from 'react'
+import Lottie from 'react-lottie';
 import { NavLink } from 'react-router-dom'
+import Banner from '../lotties/Banner.json'
+
+
+
+const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: Banner,
+    rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+    }
+};
 
 const Home = () => {
     return (
@@ -28,7 +41,7 @@ const Home = () => {
                                         What We Do
                                     </button>
                                     <ul class="dropdown-menu">
-                                    <li><NavLink className="dropdown-item" to="/dashboard">Link 1</NavLink></li>
+                                        <li><NavLink className="dropdown-item" to="/dashboard">Link 1</NavLink></li>
                                         <li><NavLink className="dropdown-item" to="/dashboard">Link 2</NavLink></li>
                                         <li><NavLink className="dropdown-item" to="/dashboard">Link 3</NavLink></li>
                                     </ul>
@@ -50,7 +63,11 @@ const Home = () => {
                         <button>Let’s Talk</button>
                     </div>
                     <div className='col-md-6 bannerimg'>
-                        <img src="/images/banner.svg" alt="" />
+                        <Lottie
+                            options={defaultOptions}
+                            height={450}
+                            width={450}
+                        />
                     </div>
                 </div>
             </div>
