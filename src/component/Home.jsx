@@ -1,7 +1,9 @@
 import React from 'react'
 import Lottie from 'react-lottie';
-import { NavLink } from 'react-router-dom'
+import Footer from './Footer'
 import Banner from '../lotties/Banner.json'
+import Ecommerce from '../lotties/Ecommerce.json'
+import Navbar from './Navbar'
 
 
 
@@ -13,45 +15,19 @@ const defaultOptions = {
         preserveAspectRatio: "xMidYMid slice"
     }
 };
+const ecommerceOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: Ecommerce,
+    rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+    }
+};
 
 const Home = () => {
     return (
         <>
-
-
-            <div className='container header'>
-                <div className='row'>
-                    <div className='col-md-12'>
-                        <img className='header-img' src="/images/toplayer.svg" alt="" />
-                        <div className='header-nav'>
-                            <img src="/images/logo.svg" alt="" />
-                            <div className='drop-item'>
-                                <div className="dropdown">
-                                    <button type="button" className="btn dropdown-toggle" data-bs-toggle="dropdown">
-                                        Who We Help
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><NavLink className="dropdown-item" to="/dashboard">Link 1</NavLink></li>
-                                        <li><NavLink className="dropdown-item" to="/dashboard">Link 2</NavLink></li>
-                                        <li><NavLink className="dropdown-item" to="/dashboard">Link 3</NavLink></li>
-                                    </ul>
-                                </div>
-                                <div className="dropdown">
-                                    <button type="button" className="btn dropdown-toggle" data-bs-toggle="dropdown">
-                                        What We Do
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><NavLink className="dropdown-item" to="/dashboard">Link 1</NavLink></li>
-                                        <li><NavLink className="dropdown-item" to="/dashboard">Link 2</NavLink></li>
-                                        <li><NavLink className="dropdown-item" to="/dashboard">Link 3</NavLink></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <button className='header-btn'>Contact Us</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Navbar />
 
             <div className='container mt-5'>
                 <div className='row'>
@@ -65,8 +41,7 @@ const Home = () => {
                     <div className='col-md-6 bannerimg'>
                         <Lottie
                             options={defaultOptions}
-                            height={450}
-                            width={450}
+                            isClickToPauseDisabled={true} 
                         />
                     </div>
                 </div>
@@ -172,7 +147,11 @@ const Home = () => {
             <div className='container my-5'>
                 <div className='row'>
                     <div className='col-md-4 bannerimg'>
-                        <img src="/images/ecom.svg" alt="" />
+                        <div className='lottie'>
+                            <Lottie
+                                options={ecommerceOptions}
+                            />
+                        </div>
                     </div>
                     <div className='col-md-1'></div>
                     <div className='col-md-7 service-block'>
@@ -266,22 +245,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='container-fluid footer'>
-                <div className='row'>
-                    <div className='col-md-12 footer-banner'>
-                        <div className='img-box'>
-                            <img src="/images/calenders.svg" alt="" />
-                        </div>
-                        <h4>To Book A Consult, Contact Us</h4>
-                        <button>Let’s Talk</button>
-                    </div>
-                    <div className='col-md-12  text-center'>
-                        <p className='text-light'></p>
-                        <p className='text-light'>Contact Us  |  Privacy Policy  |  Terms And Conditions  |  Questions?We Love To Hear From You!</p>
-                        <p className='text-light'>© 2022 Onlineable. All Rights Reserved.</p>
-                    </div>
-                </div>
-            </div>
+            <Footer />
         </>
     )
 }
