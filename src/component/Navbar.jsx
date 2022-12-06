@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-sm navbar-light ">
                 <div className="container mt-3">
                     <img className='layer' src="/images/toplayer.svg" alt="" />
-                    <img src="/images/logo.svg" alt="" />
+                    <img className='logo' src="/images/logo.svg" alt="" />
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                         <span className="navbar-toggler-icon"></span>
                     </button>

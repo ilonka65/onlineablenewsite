@@ -38,10 +38,10 @@ const Home = () => {
                             enduring ecommerce growth via managed outsourcing.</p>
                         <button>Let’s Talk</button>
                     </div>
-                    <div className='col-md-6 bannerimg'>
+                    <div className='col-md-6 bannerimg gradiant'>
                         <Lottie
                             options={defaultOptions}
-                            isClickToPauseDisabled={true} 
+                            isClickToPauseDisabled={true}
                         />
                     </div>
                 </div>
@@ -58,7 +58,7 @@ const Home = () => {
             <div className='container margin-auto'>
                 <div className='row'>
                     <div className='col-md-4 '></div>
-                    <div className='col-md-4 margin-auto midarticle'>
+                    <div className='col-md-4 margin-auto midarticle gradiant-work'>
                         <h5>How It Works</h5>
                         <p className='bottom-line'></p>
                     </div>
@@ -115,7 +115,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='container my-5'>
+            <div className='container space-top '>
                 <div className='row my-5'>
                     <div className='col-md-4 '></div>
                     <div className='col-md-4  midarticle'>
@@ -128,6 +128,10 @@ const Home = () => {
 
             <div className='container mt-5'>
                 <div className='row'>
+
+                <div className='col-md-5 col-img bannerimg gradiant-seo'>
+                <img src="/images/seo.svg" alt="" />
+                </div>
                     <div className='col-md-7 service-block'>
                         <h4>SEO</h4>
                         <p>By engaging in strategic long-term SEO, we help you climb to the top of the organic rankings, producing bankable results over time.<br></br><br></br>
@@ -138,7 +142,7 @@ const Home = () => {
                         <button>Learn More</button>
                     </div>
                     <div className='col-md-1'></div>
-                    <div className='col-md-4 bannerimg'>
+                    <div className='col-md-4 bannerimg gradiant-seo col2-img'>
                         <img src="/images/seo.svg" alt="" />
                     </div>
                 </div>
@@ -146,7 +150,7 @@ const Home = () => {
 
             <div className='container my-5'>
                 <div className='row'>
-                    <div className='col-md-4 bannerimg'>
+                    <div className='col-md-4 bannerimg gradiant-seo'>
                         <div className='lottie'>
                             <Lottie
                                 options={ecommerceOptions}
@@ -167,6 +171,10 @@ const Home = () => {
             </div>
             <div className='container mt-5'>
                 <div className='row'>
+
+                <div className='col-md-5 col-img bannerimg gradiant-seo'>
+                <img src="/images/web.svg" alt="" />
+                </div>
                     <div className='col-md-7 service-block'>
                         <h4>Web Development</h4>
                         <p>We provide sustainable web development solutions via our highly skilled and creative offshore team.<br></br><br></br>
@@ -177,7 +185,7 @@ const Home = () => {
                         <button>Learn More</button>
                     </div>
                     <div className='col-md-1'></div>
-                    <div className='col-md-4 bannerimg'>
+                    <div className='col-md-4 col2-img bannerimg gradiant-seo'>
                         <img src="/images/web.svg" alt="" />
                     </div>
                 </div>
@@ -206,8 +214,8 @@ const Home = () => {
 
             <div className='container-fluid icon-table'>
                 <div className='row'>
-                    <div className='col-md-2 text-center'></div>
-                    <div className='col-md-2 text-center'>
+                    <div className='col-md-2  text-center'></div>
+                    <div className='col-md-2 col-6 text-center'>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/shoping.svg" alt="" /></li>
                             <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/adword.svg" alt="" /></li>
@@ -215,16 +223,16 @@ const Home = () => {
                             <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/woocommerce.svg" alt="" /></li>
                         </ul>
                     </div>
-                    <div className='col-md-2 text-center'>
+                    <div className='col-md-2 col-6 text-center'>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/magento.svg" alt="" /></li>
                             <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/hubshot.svg" alt="" /></li>
                             <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/wordpress.svg" alt="" /></li>
                             <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/jira.svg" alt="" /></li>
-                            <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/ebay.svg" alt="" /></li>
+                            <li class="list-group-item mobicons"><img className='footer-icon' src="/images/software-icon/ebay.svg" alt="" /></li>
                         </ul>
                     </div>
-                    <div className='col-md-2 text-center'>
+                    <div className='col-md-2 col-6 text-center'>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/amajon.svg" alt="" /></li>
                             <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/css.svg" alt="" /></li>
@@ -233,15 +241,16 @@ const Home = () => {
                             <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/php.svg" alt="" /></li>
                         </ul>
                     </div>
-                    <div className='col-md-2 text-center'>
+                    <div className='col-md-2 col-6 text-center'>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/filemaker.svg" alt="" /></li>
                             <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/facebook.svg" alt="" /></li>
                             <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/instagram.svg" alt="" /></li>
                             <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/semrush.svg" alt="" /></li>
+                            <li class="list-group-item mobicon"><img className='footer-icon' src="/images/software-icon/ebay.svg" alt="" /></li>
                         </ul>
                     </div>
-                    <div className='col-md-2 text-center'></div>
+                    <div className='col-md-2  text-center'></div>
                 </div>
             </div>
 
