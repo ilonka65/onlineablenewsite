@@ -384,7 +384,9 @@ body {
   .banner p {
     font-size: 18px;
   }
-
+  .gradiant-work{
+    background: radial-gradient(60% 50% at 47% 32%, rgba(136, 215, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+  }
   .banner button {
     width: auto;
     height: 50px;

@@ -3,6 +3,7 @@ import Lottie from 'react-lottie';
 import Footer from './Footer'
 import Banner from '../lotties/Banner.json'
 import Ecommerce from '../lotties/Ecommerce.json'
+import webdev from '../lotties/webdev.json'
 import Navbar from './Navbar'
 
 
@@ -19,6 +20,14 @@ const ecommerceOptions = {
     loop: true,
     autoplay: true,
     animationData: Ecommerce,
+    rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+    }
+};
+const webOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: webdev,
     rendererSettings: {
         preserveAspectRatio: "xMidYMid slice"
     }
@@ -173,7 +182,11 @@ const Home = () => {
                 <div className='row'>
 
                 <div className='col-md-5 col-img bannerimg gradiant-seo'>
-                <img src="/images/web.svg" alt="" />
+                <div className='lottie'>
+                            <Lottie
+                                options={webOptions}
+                            />
+                        </div>
                 </div>
                     <div className='col-md-7 service-block'>
                         <h4>Web Development</h4>
@@ -186,7 +199,11 @@ const Home = () => {
                     </div>
                     <div className='col-md-1'></div>
                     <div className='col-md-4 col2-img bannerimg gradiant-seo'>
-                        <img src="/images/web.svg" alt="" />
+                    <div className='lottie'>
+                            <Lottie
+                                options={webOptions}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
