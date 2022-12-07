@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Lottie from 'react-lottie';
 import Footer from './Footer'
 import Banner from '../lotties/Banner.json'
