@@ -4,6 +4,7 @@ import Footer from './Footer'
 import Banner from '../lotties/Banner.json'
 import Ecommerce from '../lotties/Ecommerce.json'
 import webdev from '../lotties/webdev.json'
+import Seo from '../lotties/Seo.json'
 import Navbar from './Navbar'
 
 
@@ -28,6 +29,14 @@ const webOptions = {
     loop: true,
     autoplay: true,
     animationData: webdev,
+    rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+    }
+};
+const seoOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: Seo,
     rendererSettings: {
         preserveAspectRatio: "xMidYMid slice"
     }
@@ -138,9 +147,13 @@ const Home = () => {
             <div className='container mt-5'>
                 <div className='row'>
 
-                <div className='col-md-5 col-img bannerimg gradiant-seo'>
-                <img src="/images/seo.svg" alt="" />
-                </div>
+                    <div className='col-md-5 col-img bannerimg gradiant-seo'>
+                        <div className='lottie'>
+                            <Lottie
+                                options={seoOptions}
+                            />
+                        </div>
+                    </div>
                     <div className='col-md-7 service-block'>
                         <h4>SEO</h4>
                         <p>By engaging in strategic long-term SEO, we help you climb to the top of the organic rankings, producing bankable results over time.<br></br><br></br>
@@ -152,7 +165,11 @@ const Home = () => {
                     </div>
                     <div className='col-md-1'></div>
                     <div className='col-md-4 bannerimg gradiant-seo col2-img'>
-                        <img src="/images/seo.svg" alt="" />
+                        <div className='lottie'>
+                            <Lottie
+                                options={seoOptions}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -181,13 +198,13 @@ const Home = () => {
             <div className='container mt-5'>
                 <div className='row'>
 
-                <div className='col-md-5 col-img bannerimg gradiant-seo'>
-                <div className='lottie'>
+                    <div className='col-md-5 col-img bannerimg gradiant-seo'>
+                        <div className='lottie'>
                             <Lottie
                                 options={webOptions}
                             />
                         </div>
-                </div>
+                    </div>
                     <div className='col-md-7 service-block'>
                         <h4>Web Development</h4>
                         <p>We provide sustainable web development solutions via our highly skilled and creative offshore team.<br></br><br></br>
@@ -199,7 +216,7 @@ const Home = () => {
                     </div>
                     <div className='col-md-1'></div>
                     <div className='col-md-4 col2-img bannerimg gradiant-seo'>
-                    <div className='lottie'>
+                        <div className='lottie'>
                             <Lottie
                                 options={webOptions}
                             />
@@ -233,38 +250,38 @@ const Home = () => {
                 <div className='row'>
                     <div className='col-md-2  text-center'></div>
                     <div className='col-md-2 col-6 text-center'>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/shoping.svg" alt="" /></li>
-                            <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/adword.svg" alt="" /></li>
-                            <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/analytics.svg" alt="" /></li>
-                            <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/woocommerce.svg" alt="" /></li>
+                        <ul className="list-group list-group-flush">
+                            <li className="list-group-item"><img className='footer-icon' src="/images/software-icon/shoping.svg" alt="" /></li>
+                            <li className="list-group-item"><img className='footer-icon' src="/images/software-icon/adword.svg" alt="" /></li>
+                            <li className="list-group-item"><img className='footer-icon' src="/images/software-icon/analytics.svg" alt="" /></li>
+                            <li className="list-group-item"><img className='footer-icon' src="/images/software-icon/woocommerce.svg" alt="" /></li>
                         </ul>
                     </div>
                     <div className='col-md-2 col-6 text-center'>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/magento.svg" alt="" /></li>
-                            <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/hubshot.svg" alt="" /></li>
-                            <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/wordpress.svg" alt="" /></li>
-                            <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/jira.svg" alt="" /></li>
-                            <li class="list-group-item mobicons"><img className='footer-icon' src="/images/software-icon/ebay.svg" alt="" /></li>
+                        <ul className="list-group list-group-flush">
+                            <li className="list-group-item"><img className='footer-icon' src="/images/software-icon/magento.svg" alt="" /></li>
+                            <li className="list-group-item"><img className='footer-icon' src="/images/software-icon/hubshot.svg" alt="" /></li>
+                            <li className="list-group-item"><img className='footer-icon' src="/images/software-icon/wordpress.svg" alt="" /></li>
+                            <li className="list-group-item"><img className='footer-icon' src="/images/software-icon/jira.svg" alt="" /></li>
+                            <li className="list-group-item mobicons"><img className='footer-icon' src="/images/software-icon/ebay.svg" alt="" /></li>
                         </ul>
                     </div>
                     <div className='col-md-2 col-6 text-center'>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/amajon.svg" alt="" /></li>
-                            <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/css.svg" alt="" /></li>
-                            <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/html.svg" alt="" /></li>
-                            <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/react.svg" alt="" /></li>
-                            <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/php.svg" alt="" /></li>
+                        <ul className="list-group list-group-flush">
+                            <li className="list-group-item"><img className='footer-icon' src="/images/software-icon/amajon.svg" alt="" /></li>
+                            <li className="list-group-item"><img className='footer-icon' src="/images/software-icon/css.svg" alt="" /></li>
+                            <li className="list-group-item"><img className='footer-icon' src="/images/software-icon/html.svg" alt="" /></li>
+                            <li className="list-group-item"><img className='footer-icon' src="/images/software-icon/react.svg" alt="" /></li>
+                            <li className="list-group-item"><img className='footer-icon' src="/images/software-icon/php.svg" alt="" /></li>
                         </ul>
                     </div>
                     <div className='col-md-2 col-6 text-center'>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/filemaker.svg" alt="" /></li>
-                            <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/facebook.svg" alt="" /></li>
-                            <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/instagram.svg" alt="" /></li>
-                            <li class="list-group-item"><img className='footer-icon' src="/images/software-icon/semrush.svg" alt="" /></li>
-                            <li class="list-group-item mobicon"><img className='footer-icon' src="/images/software-icon/ebay.svg" alt="" /></li>
+                        <ul className="list-group list-group-flush">
+                            <li className="list-group-item"><img className='footer-icon' src="/images/software-icon/filemaker.svg" alt="" /></li>
+                            <li className="list-group-item"><img className='footer-icon' src="/images/software-icon/facebook.svg" alt="" /></li>
+                            <li className="list-group-item"><img className='footer-icon' src="/images/software-icon/instagram.svg" alt="" /></li>
+                            <li className="list-group-item"><img className='footer-icon' src="/images/software-icon/semrush.svg" alt="" /></li>
+                            <li className="list-group-item mobicon"><img className='footer-icon' src="/images/software-icon/ebay.svg" alt="" /></li>
                         </ul>
                     </div>
                     <div className='col-md-2  text-center'></div>
